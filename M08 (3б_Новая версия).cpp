@@ -5,23 +5,20 @@
 using namespace std;
 int get_angle(int a,int b,int c)
 {
-// ïðîâåðêà íà êîððåêòíîñòü çíà÷åíèé àðãóìåíòîâ (>0).
-    if (a<=0 || b<=0 || c<=0 ){
-        cout << "Error you entered incorrectly!";
-        return 0;
+if (a<=0 || b<=0 || c<=0 ){
+    cout << "Error you entered incorrectly!";
+    return 0;
 }
-    else {
-    //  ôîðìóëà áóäåò èñïîëüçîâàòüñÿ ñ  àrccos!
-        float d,rad;
-        int grad;
-        d=((b*b)+(c*c)-(a*a))/(2*b*c); //ÐÀÑ×ÈÒÀË ÓÃÎË Â ÐÀÄÈÀÍÀÕ
-        rad=acos(d);
-        grad=rad*180/3.14;
-        return grad;
+else {
+    float d,rad;
+    int grad;
+    d=((b*b)+(c*c)-(a*a))/(2*b*c); //ÃÃ€Ã‘Ã—ÃˆÃ’Ã€Ã‹ Ã“ÃƒÃŽÃ‹ Ã‚ ÃÃ€Ã„ÃˆÃ€ÃÃ€Ã•
+    rad=acos(d);
+    grad=rad*180/3.14;
+    return grad;
 }
 }
-int main()
-{
+int main(){
     cout<< get_angle(5.,4.,3.);
     return 0;
 }
