@@ -17,7 +17,7 @@ int get_angle(int a,int b,int c)
         grad=rad*180/3.14;
         return grad;
     }
-    }
+}
 
 int main(){
     cout<< get_angle(5.,4.,3.);
