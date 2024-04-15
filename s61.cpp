@@ -31,6 +31,5 @@ int main()
 {
     Bucket vedro;
     cout<<vedro.ffill(12);
-
     return 0;
 }
